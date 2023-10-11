@@ -212,18 +212,7 @@ for (const key in formDataCopy) {
         <textarea type="text" placeholder='Description' id="description" value={description} className='px-7 py-3 mt-6 rounded border w-full outline-none' onChange={onChange} required/>
 
         <textarea type="text" placeholder='Address' id="address" value={address} className='px-7 py-3 mt-6 rounded border w-full outline-none' onChange={onChange} required/>
-        {!geolocationEnabled && (
-          <div className='flex '>
-            <div className='mr-4'>
-              <p className='text-sm opacity-50 mt-2'>Latitude</p>
-              <input type="number" id='latitude' value={latitude} onChange={onChange} required className='w-full mr-2 py-3 px-7 border rounded outline-none' min="-90" max="90"/>
-            </div>
-            <div className=''>
-              <p className='text-sm opacity-50 mt-2'>Longitide</p>
-              <input type="number" id='longitude' value={longitude} onChange={onChange} required className='w-full mr-2 py-3 px-7 border rounded outline-none' min="-180" max="180"/>
-            </div>
-          </div>
-        )}
+        
 
         <div className='flex mt-4 '>
           <button type='button' id='offer' value={true} onClick={onChange} className={`px-7 py-3 mr-2 font-medium text-sm uppercase rounded  transition w-full shadow hover:shadow-md  ${!offer ? " text-black" : "bg-black text-white" }`}>Offer</button>

@@ -34,15 +34,15 @@ export default function Header() {
     <div className='bg-white border-b shadow-sm sticky top-0 x-50 z-50'>
         <header className='flex justify-between items-center px-3 max-w-6xl mx-auto'>
             <div>
-                <h2 className='cursor-pointer text-2xl font-semibold text-red-600' onClick={()=>{navigate("/")}}>Stay</h2>
+                <h2 className='cursor-pointer text-3xl font-semibold text-red-600' onClick={()=>{navigate("/")}}>Stay</h2>
             </div>
             <div>
                 <ul className='flex space-x-10'>
-                    <li className={` cursor-pointer py-3 text-sm font-semibold border-b-[3px]   ${pathMatchRoute("/") && "border-b-red-500"}`}  onClick={()=>navigate("/")}>Home</li>
+                    <li className={` cursor-pointer py-3 text-lg font-semibold border-b-[3px]   ${pathMatchRoute("/") && "border-b-red-500"}`}  onClick={()=>navigate("/")}>Home</li>
 
-                    <li className={` cursor-pointer py-3 text-sm font-semibold border-b-[3px]   ${pathMatchRoute("/offers") && "border-b-red-500"}`}  onClick={()=>navigate("/offers")}>Offers</li>
+                    <li className={` cursor-pointer py-3 text-lg font-semibold border-b-[3px]   ${pathMatchRoute("/offers") && "border-b-red-500"}`}  onClick={()=>navigate("/offers")}>Offers</li>
 
-                    <li className={` cursor-pointer py-3 text-sm font-semibold border-b-[3px]   ${(pathMatchRoute("/sign-in") || pathMatchRoute("/profile")) &&"border-b-red-500"}`}  onClick={()=>navigate("/profile")}>{pageState}</li>
+                    <li className={` cursor-pointer py-3 text-lg font-semibold border-b-[3px]   ${(pathMatchRoute("/sign-in") || pathMatchRoute("/profile")) &&"border-b-red-500"}`}  onClick={()=>navigate("/profile")}>{pageState}</li>
                 </ul>
             </div>
         </header>

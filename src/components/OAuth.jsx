@@ -40,7 +40,7 @@ export default function OAuth() {
 
   return (
     <>
-    <button type="button" onClick={onGoogleClick} className='my-2 bg-blue-400 hover:bg-blue-500 transition w-full p-2 rounded text-white '>Continue with Google</button>
+    <button type="button" onClick={onGoogleClick} className='my-2 bg-gray-800 hover:bg-black transition w-full p-2 rounded-b-full text-white '>Continue with Google</button>
     </>
   )
 }

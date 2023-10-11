@@ -29,7 +29,7 @@ return (
       <div className="flex justify-center flex-wrap items-center px-6 py-12 max-w-6xl mx-auto">
 
         <div className="md:w-[67%] lg:w-[50%] mb-12 md:mb-6">
-          <img src="https://media.istockphoto.com/id/1338320568/photo/3d-lock-and-password-field-password-protected-secure-login-concept-minimal-creative-concept.webp?b=1&s=170667a&w=0&k=20&c=bWm_qE27jl8hRh9kQVWb8Xm52k2ZPdP_nRMP5-mgReg=" alt="key"  
+          <img src="https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bG9naW58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="key"  
           className="w-full rounded-2xl"
           />
         </div>
@@ -41,7 +41,7 @@ return (
               value={Email} 
               onChange={onchange}
               placeholder="Email address"
-              className=" mb-6 w-full px-4 py-2 text-xl text-gray-700 bg-white border-gray-300 rounded transition ease-in-out rounded-full "
+              className=" mb-6 w-full px-4 py-2 text-xl text-gray-700 bg-gray-200 border-gray-300 transition ease-in-out rounded-full"
               
               />
               
@@ -54,7 +54,7 @@ return (
                   <Link to="/Sign-in" className="text-blue-500 hover:text-blue-900 transition duration-200 ease-in-out ml-4">Sign-In instead</Link>
                </p>
               </div>
-              <button className="w-full bg-blue-600 text-white px-7 py-3 text-sm font-medium uppercase rounded shadow-md hover:bg-blue-800 transition duration-150 ease-in-out hover:shadow-lg active:bg-blue-800 rounded-full"type="submit">send reset password</button>
+              <button className="w-full bg-blue-600 text-white px-7 py-3 text-sm font-medium uppercase shadow-md hover:bg-blue-800 transition duration-150 ease-in-out hover:shadow-lg active:bg-blue-800 rounded-t-full"type="submit">send reset password</button>
 
             <div className=" flex  items-center my-4 before:border-t before:flex-1  before:border-gray-400 
             after:border-t after:flex-1  after:border-gray-400 ">
